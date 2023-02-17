@@ -46,7 +46,12 @@ namespace Proyecto_final_definitivo
             this.userInformacion1.form = this;
             this.userEquipoDocente1.form = this;
             this.userPlanoCentro1.form = this;
-            this.userPlanoPlanta11.form = this;
+            this.userPlanoPlanta1.form = this;
+            this.userElegirPlano1.form = this;
+            this.userPlanoPlanta01.form = this;
+            this.userPlanta11.form = this;
+
+          
            
 
             
@@ -122,9 +127,10 @@ namespace Proyecto_final_definitivo
         /// </summary>
         public void MostrarPlanosDelCentro()
         {
-            OcultarUserAlumno1();
-            this.userPlanoCentro1.Visible = true;
-            this.userPlanoCentro1.BringToFront();
+            this.userPlanoPlanta01.Visible = false;
+            this.userPlanoPlanta01.SendToBack();
+            this.userElegirPlano1.Visible = true;
+            this.userElegirPlano1.BringToFront();
         }
 
         /// <summary>
@@ -142,11 +148,11 @@ namespace Proyecto_final_definitivo
         /// <summary>
         /// Método que muestra el user control que muestra el plano de la planta uno.
         /// </summary>
-        public void MostrarUserPlanoPlanta1()
+        public void MostrarUserPlanoPlanta0()
         {
             this.MostrarPlanosDelCentro();
-            this.userPlanoPlanta11.Visible = true;
-            this.userPlanoPlanta11.BringToFront();
+            this.userPlanoPlanta01.Visible = true;
+            this.userPlanoPlanta01.BringToFront();
         }
 
         /// <summary>
@@ -154,8 +160,39 @@ namespace Proyecto_final_definitivo
         /// </summary>
         public void OcultarUserPlanoPlanta1()
         {
-            this.userPlanoPlanta11.Visible = false;
-            this.userPlanoPlanta11.SendToBack();
+            this.userPlanoPlanta01.Visible = false;
+            this.userPlanoPlanta01.SendToBack();
+            this.MostrarPlanosDelCentro();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void userBienvenida2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void MostrarPlanta1()
+        {
+            this.userElegirPlano1.Visible = false;
+            this.userElegirPlano1.SendToBack();
+
+            this.userPlanta11.Visible=true;
+            this.userPlanta11.BringToFront();
+            
+
+        }
+
+
+        public void SalirPlanoPlanta1()
+        {
+            this.userPlanoPlanta1.Visible = false;
+            this.userPlanoPlanta1.SendToBack();
+            this.MostrarPlanosDelCentro();
+
         }
     }
 }

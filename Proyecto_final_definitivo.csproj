@@ -72,11 +72,11 @@
     <Compile Include="UserBienvenida.Designer.cs">
       <DependentUpon>UserBienvenida.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserPlanoPlanta1.cs">
+    <Compile Include="UserPlanta0.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserPlanoPlanta1.Designer.cs">
-      <DependentUpon>UserPlanoPlanta1.cs</DependentUpon>
+    <Compile Include="UserPlanta0.Designer.cs">
+      <DependentUpon>UserPlanta0.cs</DependentUpon>
     </Compile>
     <Compile Include="UserEquipoDocente.cs">
       <SubType>UserControl</SubType>
@@ -96,11 +96,17 @@
     <Compile Include="UserPapeleriasCercanas.Designer.cs">
       <DependentUpon>UserPapeleriasCercanas.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserPlanoCentro.cs">
+    <Compile Include="UserElegirPlano.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserPlanoCentro.Designer.cs">
-      <DependentUpon>UserPlanoCentro.cs</DependentUpon>
+    <Compile Include="UserElegirPlano.Designer.cs">
+      <DependentUpon>UserElegirPlano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPlanta1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserPlanta1.Designer.cs">
+      <DependentUpon>UserPlanta1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -121,11 +127,14 @@
     <EmbeddedResource Include="UserAulas.resx">
       <DependentUpon>UserAulas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserBienvenida.dje-NE.resx">
+      <DependentUpon>UserBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserBienvenida.resx">
       <DependentUpon>UserBienvenida.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserPlanoPlanta1.resx">
-      <DependentUpon>UserPlanoPlanta1.cs</DependentUpon>
+    <EmbeddedResource Include="UserPlanta0.resx">
+      <DependentUpon>UserPlanta0.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserEquipoDocente.resx">
       <DependentUpon>UserEquipoDocente.cs</DependentUpon>
@@ -136,8 +145,11 @@
     <EmbeddedResource Include="UserPapeleriasCercanas.resx">
       <DependentUpon>UserPapeleriasCercanas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserPlanoCentro.resx">
-      <DependentUpon>UserPlanoCentro.cs</DependentUpon>
+    <EmbeddedResource Include="UserElegirPlano.resx">
+      <DependentUpon>UserElegirPlano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPlanta1.resx">
+      <DependentUpon>UserPlanta1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -220,6 +232,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\planoPlanta0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planta2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_eye_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_hide_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planta21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planta1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planta11.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

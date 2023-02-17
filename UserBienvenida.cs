@@ -23,5 +23,20 @@ namespace Proyecto_final_definitivo
         {
             form.ocultarInicio();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            form.Close();
+        }
+
+        private void UserBienvenida_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
