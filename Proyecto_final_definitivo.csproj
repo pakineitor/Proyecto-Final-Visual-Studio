@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DLL">
+      <HintPath>..\..\DLL\DLL\bin\Debug\DLL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,17 +64,35 @@
     <Compile Include="UserAlumno.Designer.cs">
       <DependentUpon>UserAlumno.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserAulas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserAulas.Designer.cs">
-      <DependentUpon>UserAulas.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserBienvenida.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserBienvenida.Designer.cs">
       <DependentUpon>UserBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserContacto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserContacto.Designer.cs">
+      <DependentUpon>UserContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPapelerias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserPapelerias.Designer.cs">
+      <DependentUpon>UserPapelerias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPlanta2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserPlanta2.Designer.cs">
+      <DependentUpon>UserPlanta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPuntosDeInteres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserPuntosDeInteres.Designer.cs">
+      <DependentUpon>UserPuntosDeInteres.cs</DependentUpon>
     </Compile>
     <Compile Include="UserPlanta0.cs">
       <SubType>UserControl</SubType>
@@ -78,23 +100,11 @@
     <Compile Include="UserPlanta0.Designer.cs">
       <DependentUpon>UserPlanta0.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserEquipoDocente.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserEquipoDocente.Designer.cs">
-      <DependentUpon>UserEquipoDocente.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserInformacion.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserInformacion.Designer.cs">
       <DependentUpon>UserInformacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserPapeleriasCercanas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserPapeleriasCercanas.Designer.cs">
-      <DependentUpon>UserPapeleriasCercanas.cs</DependentUpon>
     </Compile>
     <Compile Include="UserElegirPlano.cs">
       <SubType>UserControl</SubType>
@@ -124,32 +134,35 @@
     <EmbeddedResource Include="UserAlumno.resx">
       <DependentUpon>UserAlumno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserAulas.resx">
-      <DependentUpon>UserAulas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserBienvenida.dje-NE.resx">
       <DependentUpon>UserBienvenida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserBienvenida.resx">
       <DependentUpon>UserBienvenida.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserContacto.resx">
+      <DependentUpon>UserContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPapelerias.resx">
+      <DependentUpon>UserPapelerias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserPlanta0.resx">
       <DependentUpon>UserPlanta0.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserEquipoDocente.resx">
-      <DependentUpon>UserEquipoDocente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserInformacion.resx">
       <DependentUpon>UserInformacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserPapeleriasCercanas.resx">
-      <DependentUpon>UserPapeleriasCercanas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserElegirPlano.resx">
       <DependentUpon>UserElegirPlano.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserPlanta1.resx">
       <DependentUpon>UserPlanta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPlanta2.resx">
+      <DependentUpon>UserPlanta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPuntosDeInteres.resx">
+      <DependentUpon>UserPuntosDeInteres.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -253,6 +266,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Planta11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Variante Logo Fund José Grass 01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Variante Logo Fund José Grass 011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planta22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_coffee_maker_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_coffee_maker_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_coffee_maker_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_parking_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_send_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_help_321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

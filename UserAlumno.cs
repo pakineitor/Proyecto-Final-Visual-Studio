@@ -39,14 +39,37 @@ namespace Proyecto_final_definitivo
 
         }
 
-        private void btEquipoDirectivo_Click(object sender, EventArgs e)
-        {
-            form.MostrarEquipoDiretivo();
-        }
+        
 
         private void btPlanoCentro_Click(object sender, EventArgs e)
         {
             form.MostrarPlanosDelCentro();
+        }
+
+        private void btSitiosInteres_Click(object sender, EventArgs e)
+        {
+            form.MostrarUserPuntosInteres();
+        }
+
+        private void MouseHoverinformacion(object sender, EventArgs e)
+        {
+      
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            form.MostrarUserContacto();
+        }
+
+        private void btAulas_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para poder navegar por la aplicación, vaya pulsando por los botones y el programa le irá llevando " +
+                "hacia donde necesite. Gracias ^^");
+        }
+
+        private void btPapeleriasCercanas_Click(object sender, EventArgs e)
+        {
+            form.MostrarPapelerias();
         }
     }
 }

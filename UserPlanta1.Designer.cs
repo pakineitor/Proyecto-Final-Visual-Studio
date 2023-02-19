@@ -56,6 +56,7 @@
             // 
             // Mostrar
             // 
+            this.Mostrar.BackColor = System.Drawing.Color.Aqua;
             this.Mostrar.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mostrar.Image = global::Proyecto_final_definitivo.Properties.Resources.icons8_eye_32;
             this.Mostrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -64,11 +65,12 @@
             this.Mostrar.Size = new System.Drawing.Size(203, 41);
             this.Mostrar.TabIndex = 41;
             this.Mostrar.Text = "mostrar";
-            this.Mostrar.UseVisualStyleBackColor = true;
+            this.Mostrar.UseVisualStyleBackColor = false;
             this.Mostrar.Click += new System.EventHandler(this.Mostrar_Click);
             // 
             // btback
             // 
+            this.btback.BackColor = System.Drawing.Color.Aqua;
             this.btback.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btback.Image = global::Proyecto_final_definitivo.Properties.Resources.dirrection_sign_arrows_chevron_icon_233796;
             this.btback.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -77,11 +79,12 @@
             this.btback.Size = new System.Drawing.Size(203, 41);
             this.btback.TabIndex = 40;
             this.btback.Text = "volver";
-            this.btback.UseVisualStyleBackColor = true;
+            this.btback.UseVisualStyleBackColor = false;
             this.btback.Click += new System.EventHandler(this.btback_Click);
             // 
             // btOcultar
             // 
+            this.btOcultar.BackColor = System.Drawing.Color.Aqua;
             this.btOcultar.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btOcultar.Image = global::Proyecto_final_definitivo.Properties.Resources.icons8_hide_32;
             this.btOcultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -90,7 +93,7 @@
             this.btOcultar.Size = new System.Drawing.Size(203, 41);
             this.btOcultar.TabIndex = 42;
             this.btOcultar.Text = "ocultar";
-            this.btOcultar.UseVisualStyleBackColor = true;
+            this.btOcultar.UseVisualStyleBackColor = false;
             this.btOcultar.Click += new System.EventHandler(this.btOcultar_Click);
             // 
             // label9

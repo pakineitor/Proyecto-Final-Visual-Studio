@@ -29,17 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.userPapelerias1 = new Proyecto_final_definitivo.UserPapelerias();
             this.userBienvenida1 = new Proyecto_final_definitivo.UserBienvenida();
             this.userAlumno1 = new Proyecto_final_definitivo.UserAlumno();
             this.userInformacion1 = new Proyecto_final_definitivo.UserInformacion();
-            this.userEquipoDocente1 = new Proyecto_final_definitivo.UserEquipoDocente();
             this.userPlanoCentro1 = new Proyecto_final_definitivo.UserElegirPlano();
             this.userPlanoPlanta1 = new Proyecto_final_definitivo.UserPlanta0();
             this.userPlanoPlanta01 = new Proyecto_final_definitivo.UserPlanta0();
             this.userPlanoCentro2 = new Proyecto_final_definitivo.UserElegirPlano();
             this.userPlanta11 = new Proyecto_final_definitivo.UserPlanta1();
             this.userElegirPlano1 = new Proyecto_final_definitivo.UserElegirPlano();
+            this.userPuntosDeInteres1 = new Proyecto_final_definitivo.UserPuntosDeInteres();
+            this.userPlanta21 = new Proyecto_final_definitivo.UserPlanta2();
+            this.userContacto1 = new Proyecto_final_definitivo.UserContacto();
             this.SuspendLayout();
+            // 
+            // userPapelerias1
+            // 
+            this.userPapelerias1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userPapelerias1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userPapelerias1.form = null;
+            this.userPapelerias1.Location = new System.Drawing.Point(0, 0);
+            this.userPapelerias1.Margin = new System.Windows.Forms.Padding(4);
+            this.userPapelerias1.Name = "userPapelerias1";
+            this.userPapelerias1.Size = new System.Drawing.Size(1160, 642);
+            this.userPapelerias1.TabIndex = 14;
             // 
             // userBienvenida1
             // 
@@ -78,17 +92,6 @@
             this.userInformacion1.Name = "userInformacion1";
             this.userInformacion1.Size = new System.Drawing.Size(1160, 642);
             this.userInformacion1.TabIndex = 2;
-            // 
-            // userEquipoDocente1
-            // 
-            this.userEquipoDocente1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userEquipoDocente1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userEquipoDocente1.form = null;
-            this.userEquipoDocente1.Location = new System.Drawing.Point(0, 0);
-            this.userEquipoDocente1.Margin = new System.Windows.Forms.Padding(4);
-            this.userEquipoDocente1.Name = "userEquipoDocente1";
-            this.userEquipoDocente1.Size = new System.Drawing.Size(1160, 642);
-            this.userEquipoDocente1.TabIndex = 3;
             // 
             // userPlanoCentro1
             // 
@@ -146,10 +149,43 @@
             this.userElegirPlano1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userElegirPlano1.form = null;
             this.userElegirPlano1.Location = new System.Drawing.Point(0, 0);
-            this.userElegirPlano1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userElegirPlano1.Margin = new System.Windows.Forms.Padding(4);
             this.userElegirPlano1.Name = "userElegirPlano1";
             this.userElegirPlano1.Size = new System.Drawing.Size(1160, 642);
             this.userElegirPlano1.TabIndex = 10;
+            // 
+            // userPuntosDeInteres1
+            // 
+            this.userPuntosDeInteres1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userPuntosDeInteres1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userPuntosDeInteres1.form = null;
+            this.userPuntosDeInteres1.Location = new System.Drawing.Point(0, 0);
+            this.userPuntosDeInteres1.Margin = new System.Windows.Forms.Padding(4);
+            this.userPuntosDeInteres1.Name = "userPuntosDeInteres1";
+            this.userPuntosDeInteres1.Size = new System.Drawing.Size(1160, 642);
+            this.userPuntosDeInteres1.TabIndex = 11;
+            // 
+            // userPlanta21
+            // 
+            this.userPlanta21.BackColor = System.Drawing.Color.White;
+            this.userPlanta21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userPlanta21.form = null;
+            this.userPlanta21.Location = new System.Drawing.Point(0, 0);
+            this.userPlanta21.Margin = new System.Windows.Forms.Padding(4);
+            this.userPlanta21.Name = "userPlanta21";
+            this.userPlanta21.Size = new System.Drawing.Size(1160, 642);
+            this.userPlanta21.TabIndex = 12;
+            // 
+            // userContacto1
+            // 
+            this.userContacto1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userContacto1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userContacto1.form = null;
+            this.userContacto1.Location = new System.Drawing.Point(0, 0);
+            this.userContacto1.Margin = new System.Windows.Forms.Padding(4);
+            this.userContacto1.Name = "userContacto1";
+            this.userContacto1.Size = new System.Drawing.Size(1160, 642);
+            this.userContacto1.TabIndex = 13;
             // 
             // Form1
             // 
@@ -159,13 +195,16 @@
             this.Controls.Add(this.userBienvenida1);
             this.Controls.Add(this.userAlumno1);
             this.Controls.Add(this.userInformacion1);
-            this.Controls.Add(this.userEquipoDocente1);
             this.Controls.Add(this.userPlanoCentro1);
             this.Controls.Add(this.userPlanoPlanta1);
             this.Controls.Add(this.userPlanoPlanta01);
             this.Controls.Add(this.userPlanoCentro2);
             this.Controls.Add(this.userPlanta11);
             this.Controls.Add(this.userElegirPlano1);
+            this.Controls.Add(this.userPuntosDeInteres1);
+            this.Controls.Add(this.userPlanta21);
+            this.Controls.Add(this.userContacto1);
+            this.Controls.Add(this.userPapelerias1);
             this.Font = new System.Drawing.Font("MV Boli", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -182,13 +221,17 @@
         private UserBienvenida userBienvenida1;
         private UserAlumno userAlumno1;
         private UserInformacion userInformacion1;
-        private UserEquipoDocente userEquipoDocente1;
+       
         private UserElegirPlano userPlanoCentro1;
         private UserPlanta0 userPlanoPlanta1;
         private UserElegirPlano userPlanoCentro2;
         private UserPlanta0 userPlanoPlanta01;
         private UserPlanta1 userPlanta11;
         private UserElegirPlano userElegirPlano1;
+        private UserPuntosDeInteres userPuntosDeInteres1;
+        private UserPlanta2 userPlanta21;
+        private UserContacto userContacto1;
+        private UserPapelerias userPapelerias1;
     }
 }
 

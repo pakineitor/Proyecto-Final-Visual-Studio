@@ -63,12 +63,13 @@ namespace Proyecto_final_definitivo
                 this.Aulabach2.Visible = true;
                 this.laula2DAM.Visible = true;
 
-                this.Aparcamientos.Visible = true;
+                this.pictureBox3.Visible = true;
                 this.Patio.Visible = true;
                 this.SalaProfesores.Visible = true;
                 this.salaFrenteConserjeria.Visible = true;
                 this.SalaEstar.Visible = true;
                 this.Conserjeria.Visible = true;
+                this.pictureBox2.Visible = true;
                 
                 
                 
@@ -100,19 +101,24 @@ namespace Proyecto_final_definitivo
             this.Aulabach2.Visible = false;
             this.laula2DAM.Visible = false;
 
-            this.Aparcamientos.Visible = false;
+            this.pictureBox3.Visible = false;
             this.Patio.Visible = false;
             this.SalaProfesores.Visible = false;
             this.salaFrenteConserjeria.Visible = false;
             this.SalaEstar.Visible = false;
             this.Conserjeria.Visible = false;
-
+            this.pictureBox2.Visible = false;
 
 
             this.btOcultar.SendToBack();
             this.btOcultar.Visible = false;
             this.Mostrar.Visible = true;
             this.Mostrar.BringToFront();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

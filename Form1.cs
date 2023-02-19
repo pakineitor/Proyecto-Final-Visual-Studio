@@ -44,17 +44,17 @@ namespace Proyecto_final_definitivo
             this.userBienvenida1.form = this;
             this.userAlumno1.form = this;
             this.userInformacion1.form = this;
-            this.userEquipoDocente1.form = this;
             this.userPlanoCentro1.form = this;
             this.userPlanoPlanta1.form = this;
             this.userElegirPlano1.form = this;
             this.userPlanoPlanta01.form = this;
             this.userPlanta11.form = this;
-
-          
-           
-
+            this.userPuntosDeInteres1.form = this;
+            this.userPlanta21.form = this;
+            this.userContacto1.form = this;
+            this.userPapelerias1.form = this;
             
+   
         }
 
         /// <summary>
@@ -99,28 +99,7 @@ namespace Proyecto_final_definitivo
 
         }
 
-        /// <summary>
-        /// Método encargado de mostrar el user control del equipo docente.
-        /// </summary>
-        public void MostrarEquipoDiretivo()
-        {
-            OcultarUserAlumno1();
-            this.userEquipoDocente1.Visible = true;
-            this.userEquipoDocente1.BringToFront();
-
-        }
-
-        /// <summary>
-        /// Método encargado de salir del user control de Alumno.
-        /// </summary>
-        public void SalirUserAlumno()
-        {
-            this.userEquipoDocente1.Visible = false;
-            this.userEquipoDocente1.SendToBack();
-            MostrarUserAlumno1();
-
-
-        }
+       
 
         /// <summary>
         /// Método encargado de mostrar el user control que te da a elegir qué planta quieres ver del centro en el plano.
@@ -194,5 +173,47 @@ namespace Proyecto_final_definitivo
             this.MostrarPlanosDelCentro();
 
         }
+
+        public void MostrarUserPuntosInteres()
+        {
+            this.OcultarUserAlumno1();
+            this.userPuntosDeInteres1.Visible = true;
+            this.userPuntosDeInteres1.BringToFront();
+        }
+
+        public void MostrarPlanoPlanta2()
+        {
+            this.OcultarUserPlanosDelCentro();
+            this.userPlanta21.Visible = true;
+            this.userPlanta21.BringToFront();
+        }
+
+        public void OcultarUserPlanoPlanta2()
+        {
+            this.userPlanta21.Visible = false;
+            this.userPlanta21.SendToBack();
+            this.OcultarUserPlanosDelCentro();
+        }
+
+        public void MostrarUserContacto()
+        {
+            this.OcultarUserAlumno1();
+            this.userContacto1.BringToFront();
+            this.userContacto1.Visible = true;
+        }
+
+        public void MostrarPapelerias()
+        {
+            this.OcultarUserAlumno1();
+            this.userPapelerias1.Visible = true;
+            this.userPapelerias1.BringToFront();
+        }
+        public void SalirDePapelerias()
+        {
+            this.MostrarUserAlumno1();
+            this.userPapelerias1.Visible = false;
+            this.userPapelerias1.SendToBack();
+        }
+
     }
 }

@@ -49,5 +49,11 @@ namespace Proyecto_final_definitivo
         {
             form.OcultarUserPlanosDelCentro();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            form.MostrarPlanoPlanta2();
+            
+        }
     }
 }

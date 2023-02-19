@@ -39,16 +39,19 @@
             this.laula2DAM = new System.Windows.Forms.Label();
             this.EntradaPrincipalExterior = new System.Windows.Forms.Label();
             this.AseoProfesores = new System.Windows.Forms.Label();
-            this.Aparcamientos = new System.Windows.Forms.Label();
             this.Conserjeria = new System.Windows.Forms.Label();
             this.SalaEstar = new System.Windows.Forms.Label();
             this.EntradaPatioInterior = new System.Windows.Forms.Label();
+            this.Aulabach2 = new System.Windows.Forms.Label();
+            this.AseoMinusvalido = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Mostrar = new System.Windows.Forms.Button();
             this.btback = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btOcultar = new System.Windows.Forms.Button();
-            this.Aulabach2 = new System.Windows.Forms.Label();
-            this.AseoMinusvalido = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -208,20 +211,6 @@
             this.AseoProfesores.Text = "Aseo Profesores";
             this.AseoProfesores.Visible = false;
             // 
-            // Aparcamientos
-            // 
-            this.Aparcamientos.AutoSize = true;
-            this.Aparcamientos.BackColor = System.Drawing.Color.Black;
-            this.Aparcamientos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Aparcamientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Aparcamientos.ForeColor = System.Drawing.Color.White;
-            this.Aparcamientos.Location = new System.Drawing.Point(24, 52);
-            this.Aparcamientos.Name = "Aparcamientos";
-            this.Aparcamientos.Size = new System.Drawing.Size(118, 22);
-            this.Aparcamientos.TabIndex = 42;
-            this.Aparcamientos.Text = "Aparcamientos";
-            this.Aparcamientos.Visible = false;
-            // 
             // Conserjeria
             // 
             this.Conserjeria.AutoSize = true;
@@ -264,6 +253,56 @@
             this.EntradaPatioInterior.Text = "EntradaPatioInterior";
             this.EntradaPatioInterior.Visible = false;
             // 
+            // Aulabach2
+            // 
+            this.Aulabach2.AutoSize = true;
+            this.Aulabach2.BackColor = System.Drawing.Color.Black;
+            this.Aulabach2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Aulabach2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Aulabach2.ForeColor = System.Drawing.Color.White;
+            this.Aulabach2.Location = new System.Drawing.Point(394, 228);
+            this.Aulabach2.Name = "Aulabach2";
+            this.Aulabach2.Size = new System.Drawing.Size(89, 22);
+            this.Aulabach2.TabIndex = 46;
+            this.Aulabach2.Text = "AulaBach2";
+            this.Aulabach2.Visible = false;
+            // 
+            // AseoMinusvalido
+            // 
+            this.AseoMinusvalido.AutoSize = true;
+            this.AseoMinusvalido.BackColor = System.Drawing.Color.Black;
+            this.AseoMinusvalido.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.AseoMinusvalido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AseoMinusvalido.ForeColor = System.Drawing.Color.White;
+            this.AseoMinusvalido.Location = new System.Drawing.Point(854, 308);
+            this.AseoMinusvalido.Name = "AseoMinusvalido";
+            this.AseoMinusvalido.Size = new System.Drawing.Size(130, 22);
+            this.AseoMinusvalido.TabIndex = 47;
+            this.AseoMinusvalido.Text = "AseoMinusvalido";
+            this.AseoMinusvalido.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Proyecto_final_definitivo.Properties.Resources.icons8_parking_32;
+            this.pictureBox3.Location = new System.Drawing.Point(47, 21);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 49;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Proyecto_final_definitivo.Properties.Resources.icons8_coffee_maker_321;
+            this.pictureBox2.Location = new System.Drawing.Point(829, 162);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 48;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
             // Mostrar
             // 
             this.Mostrar.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -299,6 +338,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btOcultar
             // 
@@ -313,44 +353,17 @@
             this.btOcultar.UseVisualStyleBackColor = true;
             this.btOcultar.Click += new System.EventHandler(this.btOcultar_Click);
             // 
-            // Aulabach2
-            // 
-            this.Aulabach2.AutoSize = true;
-            this.Aulabach2.BackColor = System.Drawing.Color.Black;
-            this.Aulabach2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Aulabach2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Aulabach2.ForeColor = System.Drawing.Color.White;
-            this.Aulabach2.Location = new System.Drawing.Point(394, 228);
-            this.Aulabach2.Name = "Aulabach2";
-            this.Aulabach2.Size = new System.Drawing.Size(89, 22);
-            this.Aulabach2.TabIndex = 46;
-            this.Aulabach2.Text = "AulaBach2";
-            this.Aulabach2.Visible = false;
-            // 
-            // AseoMinusvalido
-            // 
-            this.AseoMinusvalido.AutoSize = true;
-            this.AseoMinusvalido.BackColor = System.Drawing.Color.Black;
-            this.AseoMinusvalido.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.AseoMinusvalido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AseoMinusvalido.ForeColor = System.Drawing.Color.White;
-            this.AseoMinusvalido.Location = new System.Drawing.Point(854, 308);
-            this.AseoMinusvalido.Name = "AseoMinusvalido";
-            this.AseoMinusvalido.Size = new System.Drawing.Size(130, 22);
-            this.AseoMinusvalido.TabIndex = 47;
-            this.AseoMinusvalido.Text = "AseoMinusvalido";
-            this.AseoMinusvalido.Visible = false;
-            // 
             // UserPlanta0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.AseoMinusvalido);
             this.Controls.Add(this.Aulabach2);
             this.Controls.Add(this.EntradaPatioInterior);
             this.Controls.Add(this.SalaEstar);
             this.Controls.Add(this.Conserjeria);
-            this.Controls.Add(this.Aparcamientos);
             this.Controls.Add(this.AseoProfesores);
             this.Controls.Add(this.EntradaPrincipalExterior);
             this.Controls.Add(this.Mostrar);
@@ -369,6 +382,8 @@
             this.Name = "UserPlanta0";
             this.Size = new System.Drawing.Size(1027, 518);
             this.Load += new System.EventHandler(this.UserPlanoPlanta1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -392,11 +407,12 @@
         private System.Windows.Forms.Button btOcultar;
         private System.Windows.Forms.Label EntradaPrincipalExterior;
         private System.Windows.Forms.Label AseoProfesores;
-        private System.Windows.Forms.Label Aparcamientos;
         private System.Windows.Forms.Label Conserjeria;
         private System.Windows.Forms.Label SalaEstar;
         private System.Windows.Forms.Label EntradaPatioInterior;
         private System.Windows.Forms.Label Aulabach2;
         private System.Windows.Forms.Label AseoMinusvalido;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
